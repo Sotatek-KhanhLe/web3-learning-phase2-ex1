@@ -1,0 +1,19 @@
+{
+  "name": "web3-learning",
+  "version": "1",
+  "description": "web3-learning",
+  "main": "index.js",
+  "repository": "git@github.com:Sotatek-KhanhLe/web3-learning-phase2-ex1.git",
+  "author": "khanh-le",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.12",
+    "web3": "^1.5.2"
+  },
+  "scripts": {
+    "start:multicall": "cross-env NODE_ENV='development' env-cmd -f ./.env nodemon ./multicall.js localhost 8080"
+  }
+}
